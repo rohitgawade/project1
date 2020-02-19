@@ -15,6 +15,7 @@ node('master')
     stage('testing')
     {
     git 'https://github.com/intelliqittrainings/FunctionalTesting.git'
+     sh label: '', script: 'java -jar /home/ubuntu/.jenkins/workspace/multi_loan/testing.jar'
     }
 
      
